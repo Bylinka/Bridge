@@ -1,77 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ITool">
-    <Position X="14.25" Y="0.5" Width="1.5" />
+  <Class Name="ITool" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProxyDOCTool">
-    <Position X="15.5" Y="5" Width="1.5" />
+  <Class Name="IPDFTool" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PDFTool" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DaylyReport">
-    <Position X="2.5" Y="5.25" Width="1.5" />
+  <Class Name="IDOCTool" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DOCToolMethod2">
-    <Position X="3.75" Y="2.75" Width="1.5" />
+  <Class Name="DOCTool" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DOCToolMethod1" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IDOCTool">
-    <Position X="16.25" Y="3" Width="1.5" />
+  <Class Name="DOCToolMethod2" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PDFTool">
-    <Position X="13.25" Y="5" Width="1.5" />
+  <Class Name="IReport" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IPDFTool">
-    <Position X="12.25" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Report.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="DOCTool">
-    <Position X="17.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Report.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="WeeklyReport">
-    <Position X="5.25" Y="5.25" Width="1.5" />
+  <Class Name="WeeklyReport" Collapsed="true">
+    <Position X="1.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProxyPDFTool">
-    <Position X="11.25" Y="5" Width="1.5" />
+  <Class Name="DaylyReport" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProxyDOCTool" Collapsed="true">
+    <Position X="11.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Decorator">
-    <Position X="9" Y="3" Width="1.5" />
+  <Class Name="ProxyPDFTool" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Decorator" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAgAAAgIAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Report.h</FileName>
