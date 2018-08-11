@@ -4,12 +4,11 @@ class ITool {
 public:
 	virtual void printLine(const char* str) = 0;
 	virtual void printHeader(const char* str) = 0;
-	virtual ~ITool() {
-		cout << typeid(this).name() << " destructor" << endl;
-	}
+	virtual ~ITool() {}
 };
-class PDFTool : public ITool {
-public:
+class IPDFTool : public ITool {};
+class PDFTool : public IPDFTool {
+	public:
 	void printLine(const char* str) {
 		cout << "PDF Line: " << str << endl;
 	};
@@ -17,7 +16,8 @@ public:
 		cout << "PDF Header: " << str << endl;
 	};
 };
-class DOCTool : public ITool {
+class IDOCTool : public ITool {};
+class DOCTool : public IDOCTool {
 public:
 	void printLine(const char* str) {
 		cout << "DOC Line: " << str << endl;
@@ -37,6 +37,7 @@ public:
 		if (tool)delete tool;
 	}
 };
+
 class WeeklyReport : public IReport {
 public:
 	WeeklyReport(ITool* tool) {
@@ -57,20 +58,42 @@ public:
 		tool->printLine("Some dayly report line.");
 	}
 };
-class ProxyTool : public ITool {
-	ITool* tool = nullptr;
+class ProxyDOCTool : public IDOCTool {
 public:
-	ProxyTool(ITool* tool) :tool(tool) {}
 	void printLine(const char* str) {
-		cout << "Proxy action -> ";
-		tool->printLine(str);
+		cout << "ProxyDOCTool action -> ";
+		DOCTool().printLine(str);
 	};
 	void printHeader(const char* str) {
-		cout << "Proxy action -> ";
-		tool->printHeader(str);
+		cout << "ProxyDOCTool action -> ";
+		DOCTool().printHeader(str);
 	};
-	~ProxyTool() {
-		if (tool)delete tool;
-		cout << typeid(*this).name() << " destructor" << endl;
+};
+class ProxyPDFTool : public IPDFTool {
+public:
+	void printLine(const char* str) {
+		cout << "ProxyPDFTool action -> ";
+		PDFTool().printLine(str);
+	};
+	void printHeader(const char* str) {
+		cout << "ProxyPDFTool action -> ";
+		PDFTool().printHeader(str);
+	};
+};
+class Decorator : public ITool {
+	ITool* next;
+public:
+	Decorator(ITool* next) :next(next) {}
+	~Decorator() {
+		cout << "deleting " << typeid(next).name() << endl;
+		if (next)delete next;
 	}
+	void printLine(const char* str) {
+		cout << "Decorator action -> ";
+		next->printLine(str);
+	};
+	void printHeader(const char* str) {
+		cout << "Decorator action -> ";
+		next->printHeader(str);
+	};
 };
