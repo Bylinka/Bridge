@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ITool">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+  <Class Name="ITool" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PDFTool">
-    <Position X="5.25" Y="2.75" Width="1.5" />
+    <Position X="10.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DOCTool">
-    <Position X="7.5" Y="2.75" Width="1.5" />
+    <Position X="8.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Report.h</FileName>
@@ -36,9 +36,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DaylyReport">
-    <Position X="3" Y="2.75" Width="1.5" />
+    <Position X="2.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProxyTool">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAACAAgIAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Report.h</FileName>
     </TypeIdentifier>
   </Class>
