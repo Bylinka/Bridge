@@ -20,11 +20,20 @@ class IDOCTool : public ITool {};
 class DOCTool : public IDOCTool {
 public:
 	void printLine(const char* str) {
-		cout << "DOC Line: " << str << endl;
+		cout << "DOC Line method "<< method() << ": " << str << endl;
 	};
 	void printHeader(const char* str) {
 		cout << "DOC Header: " << str << endl;
 	};
+	virtual int method() { return 0; }
+};
+class DOCToolMethod1 : public DOCTool {
+public:
+	int method() { return 1; }
+};
+class DOCToolMethod2 : public DOCTool {
+public:
+	int method() { return 2; }
 };
 class IReport {
 protected:
