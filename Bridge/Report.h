@@ -1,4 +1,5 @@
 #pragma once
+
 class ITool {
 public:
 	virtual void printLine(const char* str) = 0;
