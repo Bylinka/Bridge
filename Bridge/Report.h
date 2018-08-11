@@ -3,7 +3,9 @@ class ITool {
 public:
 	virtual void printLine(const char* str) = 0;
 	virtual void printHeader(const char* str) = 0;
-
+	virtual ~ITool() {
+		cout << typeid(this).name() << " destructor" << endl;
+	}
 };
 class PDFTool : public ITool {
 public:
@@ -52,5 +54,22 @@ public:
 	void print() {
 		tool->printHeader("Dayly report");
 		tool->printLine("Some dayly report line.");
+	}
+};
+class ProxyTool : public ITool {
+	ITool* tool = nullptr;
+public:
+	ProxyTool(ITool* tool) :tool(tool) {}
+	void printLine(const char* str) {
+		cout << "Proxy action -> ";
+		tool->printLine(str);
+	};
+	void printHeader(const char* str) {
+		cout << "Proxy action -> ";
+		tool->printHeader(str);
+	};
+	~ProxyTool() {
+		if (tool)delete tool;
+		cout << typeid(*this).name() << " destructor" << endl;
 	}
 };
